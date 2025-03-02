@@ -107,5 +107,3 @@ document.getElementById("theme-btn").addEventListener("click", function () {
     .padStart(6, "0");
   document.body.style.backgroundColor = `#${randomColor}`;
 });
-
-document.
