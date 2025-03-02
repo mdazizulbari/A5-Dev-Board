@@ -34,7 +34,7 @@
               <span
                 id="completed-task-number"
                 class="text-blue-900 text-3xl font-bold"
-                >23</span
+                >24</span
               >
             </div>
             <div
@@ -266,20 +266,18 @@
         </section>
       </div>
       <!-- sidebar -->
-      <aside
-        id="log-message-container"
-        class="w-1/3 bg-base-100 rounded-2xl flex flex-col items-center"
-      >
+      <aside class="w-1/3 bg-base-100 rounded-2xl flex flex-col items-center">
         <div class="flex gap-3 items-center py-5">
           <i class="fa-regular fa-clock text-2xl"></i>
           <h5 class="text-xl">Activity Log</h5>
         </div>
-        <button
+        <button id="clear-history-button"
           class="border-none bg-blue-600 text-white py-2 px-4 mb-3 cursor-pointer rounded-full"
         >
           Clear History
         </button>
         <hr class="w-full mb-1 border-t-2 border-dashed border-gray-200 my-4" />
+        <div id="log-message-container" class=""></div>
       </aside>
     </main>
   </body>

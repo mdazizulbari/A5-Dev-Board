@@ -69,10 +69,14 @@ document.querySelectorAll(".task-btn").forEach((button) => {
     }
 
     // Get task heading dynamically
-    const clickedHeading = document.getElementById(`task${taskId}-heading`).innerText;
+    const clickedHeading = document.getElementById(
+      `task${taskId}-heading`
+    ).innerText;
 
     // Add log message
-    const logMessageContainer = document.getElementById("log-message-container");
+    const logMessageContainer = document.getElementById(
+      "log-message-container"
+    );
     logMessageContainer.innerHTML += `
       <p class="mx-5 mt-5 px-3 py-2 text-gray-500 rounded-xl bg-blue-50">
         You have Completed the Task: ${clickedHeading} at ${currentTime()}
@@ -80,3 +84,13 @@ document.querySelectorAll(".task-btn").forEach((button) => {
     `;
   });
 });
+
+// clear history button logic
+document
+  .getElementById("clear-history-button")
+  .addEventListener("click", function () {
+    const logMessageContainer = document.getElementById(
+      "log-message-container"
+    );
+    logMessageContainer.innerHTML = ` `;
+  });
