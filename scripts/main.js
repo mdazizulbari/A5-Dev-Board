@@ -82,6 +82,11 @@ document.querySelectorAll(".task-btn").forEach((button) => {
         You have Completed the Task: ${clickedHeading} at ${currentTime()}
       </p>
     `;
+
+    // all tasks finish alert
+    if ((assignedTaskNumber === 0)) {
+      alert("Congratulations! You have completed all the current tasks");
+    }
   });
 });
 
