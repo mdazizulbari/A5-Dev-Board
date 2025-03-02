@@ -25,12 +25,11 @@ document.getElementById("task1-btn").addEventListener("click", function () {
     return formattedTime;
   }
   //   add log message
+  const clickedHeading = document.getElementById("task1-heading").innerText
   const logMessageContainer = document.getElementById("log-message-container");
-  const logMessage = document.createElement("p");
-  logMessage.innerHTML = `
-        <p class="mx-5 mt-5 px-3 py-2 text-gray-500 rounded-xl bg-blue-50">
-          You have Complete The Task Add Dark Mode at ${currentTime()}
-        </p>
-  `;
-  logMessageContainer.appendChild(logMessage);
+  logMessageContainer.innerHTML += `
+  <p class="mx-5 mt-5 px-3 py-2 text-gray-500 rounded-xl bg-blue-50">
+    You have Completed the Task: ${clickedHeading} at ${currentTime()}
+  </p>
+`;
 });
